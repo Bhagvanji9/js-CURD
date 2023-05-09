@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+body{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        background: rgb(121, 204, 236);
+}
+header{
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    justify-content:center;
+    align-items: center;
+
+}
+.searchBar{
+    width: 50%;
+}
+.search{
+    margin: auto;
+    max-width: 1000px
+}
+form.search input {
+    border-top-left-radius: 10px;
+    border-end-start-radius: 10px;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    width: 60%;
+    background: #f1f1f1;
+   
+}
+
+form.search button {
+    width: 10%;
+    padding: 10px;
+    background: #56d856;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: -5px;
+}
+
+form.search button:hover {
+    background: #5ce0a3;
+}
+.sort{
+    width: 10%;
+    margin-left: 30px;
+}
+.sort select,.sort label,.sort option{
+    height: 42PX;
+    font-size:22px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+section{
+        justify-content: center;
+}
+.container{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+.extraDiv{
+    background:  #ffffff; 
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px -5px #020000;
+    width:400px;
+}
+.product-form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fill-form{
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+.form-data{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 10px 0;
+}
+.form-data div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: end;
+}
+.form-data input,.form-data textarea{
+    border-radius: 10px;
+    border: #000000;    
+    background-color: #faf7f7;
+    height: 40px;
+    width: 100%;
+    box-shadow: 0px 0px 8px -3px #020000;
+}
+.form-data textarea{
+    height: auto;
+    resize: none;
+}
+#image{
+    border: none;
+    padding: 10px;
+    width: auto;
+}
+input[type=file]::-webkit-file-upload-button{
+    visibility: hidden;
+    display: none;
+
+}
+input[type=file]::before {
+    
+    content: 'Select Image';
+    display: inline-block;
+    background:inherit;
+    border-radius: 5px;
+    padding: 5px 8px;
+    margin: -10px 0;
+    white-space: nowrap;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.view-product table{
+    width: 70%;
+}
+.view-product table th,.view-product table td{
+    border: 2px solid rgb(133, 133, 133);
+    height: 50px;
+    text-align: center;
+}
+.view-product{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.view-product th{
+    height: 50px;
+    background: #70dd30;
+    border-radius: 100px;
+}
+.view-product td {
+border-radius: 10px;
+width: fit-content;
+}
+.tablebody img{
+    height: 150px;
+    width: 150px;
+}
+.product-Image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    
+}
+.product-Image1 img{
+    width: 100px;
+    height: 100px;
+}
+.editAndDeletr{
+    padding: 5px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    
+}
+.editAndDeletr button:first-child{
+    border: none;
+    width: 50px;
+    background-color: #287006;
+    color: rgb(248, 248, 248);
+    border-radius: 10px;
+}
+.editAndDeletr button:last-child {
+    border-radius: 10px;
+    color: rgb(248, 248, 248);
+    border: none;
+    background-color: #f12821;
+    width: 50px;
+    padding: 5px;
+}
+.addProduct{
+    width: 10%;
+    display: flex;
+    justify-content: center;   
+}
+.backDiv1{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+.addProduct button,.backDiv button,.backDiv1 button{
+   
+    width:200px;
+    height: 40px;
+    border: none;
+    background-color: #3fb309;
+        color: rgb(248, 248, 248);
+        border-radius: 20px;
+}
+.incorrect{
+    width: 100%;
+    text-align: center;
+    color: #f12821;
+    margin-top: 30px;
+    font-size: xx-large;
+}
+.backDiv1 button{
+    background-color: #3fb309;
+    box-shadow: 0px 0px 8px -3px #020000;
+}

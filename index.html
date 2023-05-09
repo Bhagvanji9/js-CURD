@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="searchBar">
+            <form class="search" id="search">
+                <input id="searchInput" type="text" placeholder="Search.." name="search">
+                <button id="searchBtn"><img src="./images/search.svg" alt=""></button>
+            </form>
+        </div>
+        <div class="addProduct">
+            <button>Add Product</button>
+        </div>
+        <div class="sort">
+            <select>
+                <option value="sortby" hidden disabled selected>Sort By</option>
+                <option value="id">By Id</option>
+                <option value="name">By Name</option>
+                <option value="price">By Price</option>
+            </select>
+        </div>
+        <div id="clear"></div>
+    </header>
+    <Section>
+        <div class="view-product">
+            <table class="view" id="view">
+                <thead>
+                    <tr>
+                        <th>Product Id</th>
+                        <th>Product Name</th>
+                        <th>Image</th>
+                        <th>price</th>
+                        <th>Description</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody class="tablebody">
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </Section>
+    <script src="./main.js"></script>
+</body>
+
+</html>

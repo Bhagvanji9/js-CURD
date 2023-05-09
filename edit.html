@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="product-form">
+            <div class="extraDiv">
+                <div class="title">
+                    <h2>
+                        <center>Edit Product</center>
+                    </h2>
+
+                </div>
+                <form class="fill-form" id="fill-form">
+                    <div class="form-data">
+                        <div> <label>Product Name*:</label></div>
+                        <input type="text" name="ProductName" id="ProductName" required>
+                    </div>
+                    <div class="form-data">
+                        <div> <label>Image *</label></div>
+                        <input type="file" name="image" id="image">
+                    </div>
+                    <div class="product-Image1"><img src="" alt=""></div>
+                    <div class="form-data">
+                        <div> <label>Price *</label></div>
+                        <input type="number" name="price" id="price" required>
+
+                    </div>
+                    <div class="form-data">
+                        <div> <label>Description</label></div>
+                        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="form-data form-submit">
+                        <input type="submit" value="Update Data">
+                    </div>
+                </form>
+            </div>
+            <div class="backDiv1">
+                <button id="back1">Back</button>
+            </div>
+        </div>
+        <script src="./main.js"></script>
+</body>
+
+</html>
