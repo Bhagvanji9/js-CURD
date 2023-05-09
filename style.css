@@ -8,6 +8,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+        background: rgb(121, 204, 236);
 }
 header{
     display: flex;
@@ -72,17 +73,16 @@ section{
     width: 100%;
     height: 100%;
     justify-content: center;
-    background:  rgb(121, 204, 236); 
 }
 .extraDiv{
     background:  #ffffff; 
     border-radius: 10px;
     box-shadow: 0px 0px 20px -5px #020000;
-    width:20%;
+    width:400px;
 }
 .product-form{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
