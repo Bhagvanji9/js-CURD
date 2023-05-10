@@ -17,11 +17,11 @@ let addBody = `
                 </div>
                 <div class="form-data">
                     <div> <label>Image *</label></div>
-                    <input type="file" name="image" id="image">
+                    <input type="file" name="image" id="image" required>
                 </div>
                 <div class="form-data">
                     <div> <label>Price *</label></div>
-                    <input type="number" name="price" id="price" required>
+                    <input type="number" min="1" name="price" id="price" required>
                     
                 </div>
                 <div class="form-data">
@@ -60,7 +60,7 @@ let editBody = `
                   <div class="product-Image1"><img src="" alt=""></div>
                   <div class="form-data">
                       <div> <label>Price *</label></div>
-                      <input type="number" name="price" id="price" required>
+                      <input type="number"  min="1" name="price" id="price" required>
                       
                   </div>
                   <div class="form-data">
@@ -220,7 +220,7 @@ function EditOrDelete() {
           localStorage.removeItem(getId);
           location.reload();
         }
-      } else {
+      } else if (e.target == button.firstChild) {
         let currentObject = JSON.parse(localStorage.getItem(getId));
         document.body.innerHTML = editBody;
         document.getElementById("ProductName").value =
@@ -296,8 +296,6 @@ Sort.addEventListener("click", (e) => {
     default:
       break;
   }
-  EditOrDelete();
-  getData();
 });
 
 function SortTableData(para) {
@@ -307,6 +305,8 @@ function SortTableData(para) {
     allProduct.sort((a, b) => a[para] - b[para]);
   }
   tbody.innerHTML = "";
+  getData();
+  EditOrDelete();
 }
 
 // --------------------------------------Go back-------------------------------------------
