@@ -8,7 +8,6 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-        background: rgb(121, 204, 236);
 }
 header{
     display: flex;
@@ -16,7 +15,7 @@ header{
     margin-top: 30px;
     justify-content:center;
     align-items: center;
-
+    
 }
 .searchBar{
     width: 50%;
@@ -33,7 +32,7 @@ form.search input {
     border: 1px solid grey;
     width: 60%;
     background: #f1f1f1;
-   
+    
 }
 
 form.search button {
@@ -65,13 +64,13 @@ form.search button:hover {
 }
 
 section{
-        justify-content: center;
+    justify-content: center;
 }
 .container{
     display: flex;
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     justify-content: center;
 }
 .extraDiv{
