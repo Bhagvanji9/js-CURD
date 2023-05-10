@@ -61,7 +61,6 @@ function getData() {
     body = document.body.innerHTML;
   }
 }
-
 // --------------------------------------Insert New row-------------------------------------------
 
 function insetNewRow(data) {
@@ -91,7 +90,6 @@ function addProduct() {
     back("back1");
   });
 }
-
 let image, pImage, pId, pName, pPrice, pDetail, reader;
 pId = generateId();
 function setIntoLocalStorage() {
@@ -285,11 +283,11 @@ function goBack() {
 
 function back(data) {
   document.getElementById(`${data}`).addEventListener("click", () => {
-    window.location = "/";
+    window.location = "/index.html";
   });
 }
 
-if (location.pathname == "/") {
+if (location.pathname == "/index.html" || location.pathname == "/") {
   getData();
   addProduct();
   sortProduct();
