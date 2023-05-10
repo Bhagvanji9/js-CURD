@@ -115,7 +115,7 @@ function setIntoLocalStorage() {
       localStorage.setItem(pId, JSON.stringify(name));
       insetNewRow(name);
       document.body.innerHTML = body;
-      // location.reload();
+      location.reload();
     });
   });
 }
